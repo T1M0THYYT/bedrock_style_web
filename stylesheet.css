@@ -59,7 +59,7 @@ body > div {
     margin-left: auto;
     margin-right: auto;
     width: 210px;
-    margin-top: 10%;
+    margin-top: 6%;
 }
 
 #buttons > button > #icon {
@@ -104,7 +104,7 @@ body > div {
 
 #paragraph {
     background-color: #0000;
-    color: white;
+    color: black;
     width: auto;
     padding: 15px;
     position: fixed;
