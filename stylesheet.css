@@ -3,11 +3,11 @@ body > div {
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -10;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("2023-07-14_19.58.17 (1).png");
+    background-image: url("screenshot.png");
     background-position: center;
     background-size: cover;
 }
