@@ -115,6 +115,10 @@ body > div {
     border: 2px solid;
 }
 
+#container {
+    position: absolute;
+}
+
 #cursor {
     width: 10px;
     height: 10px;
