@@ -5,7 +5,7 @@ document.addEventListener('mousemove', (e) => {
 });
 
 document.getElementById("button").addEventListener("click", function() {
-  var audio = new Audio('/sounds/button_click.wav');
+  var audio = new Audio('button_click.wav');
   audio.play();
 });
 
