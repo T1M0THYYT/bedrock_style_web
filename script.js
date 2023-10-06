@@ -4,6 +4,11 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.top = `${e.clientY}px`;
 });
 
+document.addEventListener('mousemove', (e) => {
+  const cursor_button = document.querySelector('button');
+  cursor_button.style.left = `${e.clientX}px`;
+  cursor_button.style.top = `${e.clientY}px`;
+});
 
 document.getElementById("button").addEventListener("click", function() {
   var audio = new Audio('sounds/button_click.wav');
