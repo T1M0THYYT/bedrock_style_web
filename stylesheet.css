@@ -1,7 +1,5 @@
 body {
-    margin: 0;
-    overflow: hidden;
-    background-color: #f0f0f0;
+  cursor: none;
 }
 
 body > div {
@@ -121,12 +119,11 @@ body > div {
     border: 2px solid;
 }
 
-#container {
-    position: absolute;
-}
-
-#cursor {
-    width: 100px;
-    height: 100px;
-    pointer-events: none; 
+.custom-cursor {
+  position: absolute;
+  width: 20px; 
+  height: 20px; 
+  background: url('logo.png') no-repeat;
+  background-size: cover;
+  pointer-events: none; 
 }
