@@ -1,11 +1,9 @@
-const container = document.getElementById('container');
-const cursor = document.getElementById('cursor');
-
-container.addEventListener('mousemove', (e) => {
-    const x = e.clientX;
-    const y = e.clientY;
-    cursor.style.transform = `translate(${x}px, ${y}px)`;
+document.addEventListener('mousemove', (e) => {
+  const cursor = document.querySelector('.custom-cursor');
+  cursor.style.left = `${e.clientX}px`;
+  cursor.style.top = `${e.clientY}px`;
 });
+
 
 function openWebsite(url) {
   window.open(url, "_blank");
