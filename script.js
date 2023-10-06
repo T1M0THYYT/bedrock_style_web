@@ -12,3 +12,4 @@ document.getElementById("button").addEventListener("click", function() {
 function openWebsite(url) {
   window.open(url, "_blank");
 }
+
