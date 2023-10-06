@@ -114,3 +114,9 @@ body > div {
     border-radius: 2px;
     border: 2px solid;
 }
+
+#cursor {
+    width: 10px;
+    height: 10px;
+    pointer-events: none; 
+}
