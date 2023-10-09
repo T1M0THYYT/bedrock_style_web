@@ -4,8 +4,8 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.top = `${e.clientY}px`;
 });
 
-document.getElementById("button").addEventListener("click", function() {
-  var audio = new Audio('button_click.wav');
+document.getElementById("buttons").addEventListener("click", function() {
+  var audio = new Audio('button_click.ogg');
   audio.play();
 });
 

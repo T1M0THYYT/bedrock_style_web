@@ -40,11 +40,11 @@ body > div {
 
 #buttons > button {
     transition: 0.5s;
-    width: 250px;
+    width:250px;
     height: 45px;
-    background-color: #000000bd;
+ /*   background-color: #000000bd;   */
     border: none;
-    
+    background-color: transparent;
     margin-left: 0.3cm;
     position: relative;
 }
@@ -59,16 +59,16 @@ body > div {
     transform: scale(1.1);
 }
 
-#logo {
+#minecraft_title {
     margin-left: auto;
     margin-right: auto;
-    width: 210px;
+    width: 420px;
     margin-top: 6%;
 }
 
-#buttons > button > #icon {
-    width: 98%;
-    height: 98%;
+#buttons > button > #button_icon {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     position: absolute;
     left: 50%;
@@ -84,11 +84,13 @@ body > div {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    background-color: transparent;
 }
 
 #buttons > button:hover {
-    background-color: black;
-    box-shadow: 0 -2px 0 0 rgb(255, 255, 255) inset;
+    background-color: transparent;
+   /* box-shadow: 0 0 0 0 rgb(255, 255, 255) inset;*/
+   box-shadow: none;
     transform: scale(1);
     border: 2px solid #0000;
 }
@@ -106,24 +108,35 @@ body > div {
     height: 45px;
 }
 
+#buttons > button > #pressed {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
 #paragraph {
-    background-color: #0000;
-    color: black;
+    background-color: #767676;
+    color: white;
     width: auto;
     padding: 15px;
-    position: fixed;
+    position: auto; /*fixed*/
+    margin-top: 10px;
     top: 90%;
-    font-family: Mojangles;
+    font-family: MinecraftBold;
     font-size: 12px;
-    border-radius: 2px;
-    border: 2px solid;
+    border-radius: 1px;
+    border: 4px solid;
 }
 
 .custom-cursor {
   position: absolute;
   width: 20px; 
   height: 20px; 
-  background: url('logo.png') no-repeat;
+  background: url('cursor.png') no-repeat;
   background-size: cover;
-  pointer-events: none; 
+  pointer-events: none;
 }
