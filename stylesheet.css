@@ -151,6 +151,7 @@ body > div {
     color: black;
     width: auto;
     position: fixed;
+    height: 25px;
     top: -10px;
     font-family: MinecraftTen;
     text-align: center;
