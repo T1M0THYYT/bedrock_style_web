@@ -14,6 +14,6 @@ function openWebsite(url) {
 }
 
 function showImage() {
-    var imageDiv = document.getElementById('dialogImage');
-    imageDiv.style.display = 'block';
+  var imageDiv = document.getElementById('dialogImage');
+  imageDiv.style.display = 'block';
 }
