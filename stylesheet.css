@@ -11,7 +11,7 @@ body > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("background.png");
+    background-image: url("bgwooldark.png");
     image-rendering: pixelated;
     background-position: center;
     background-size: cover;
@@ -42,7 +42,6 @@ body > div {
     transition: 0.5s;
     width: 250px;
     height: 45px;
- /*   background-color: #000000bd;   */
     border: none;
     background-color: transparent;
     margin-left: 0.1cm;
@@ -55,7 +54,6 @@ body > div {
 #buttons > button > #label {
     position: center;
     top: 1.4px;
-  /*  right: 100px;*/
     color: white;
     text-shadow: 1px 1.5px 1px #000000;
     font-family: "MinecraftTen";
@@ -65,27 +63,27 @@ body > div {
 #minecraft_title {
     margin-left: auto;
     margin-right: auto;
-    width: 70vw;
+    width: 75vw;
     margin-top: 6%;
 }
 
 #topbar {
-   	margin-left: auto;
-   	margin-right: auto;
-   	width: 100vw;
-   	z-index: 1;
-   	height: 2.5vh;
-   	image-rendering: pixelated;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    z-index: 1;
+    height: 2.5vh;
+    image-rendering: pixelated;
 	
 }
 
 #buttons > button > #button_icon {
-    	width: 100%;
-    	height: 100%;
-    	position: absolute;
-    	left: 50%;
-    	top: 50%;
-    	transform: translate(-50%, -50%);
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
  }
     
 #buttons > button > #background {
@@ -109,7 +107,6 @@ body > div {
 #buttons > button:hover {
     background-color: transparent;
     box-shadow: none;
-  /*  transform: scale(1); */
     border: 2px solid #0000;
 }
 
@@ -121,7 +118,6 @@ body > div {
 #buttons > button:active {
     transition: 0.0s;
     box-shadow: none;
-   /* height: 90%;*/
     margin-top: 1%;
     width: 250px;
     height: 45px;
@@ -142,7 +138,7 @@ body > div {
     color: white;
     width: auto;
     padding: 15px;
-    position: auto; /*fixed*/
+    position: auto; 
     margin-top: 10px;
     top: 90%;
     font-family: Mojangles;
@@ -163,8 +159,8 @@ body > div {
 }
 
 #padding {
-	   padding: 20px;
-	   position: fixed;
+   padding: 20px;
+   position: fixed;
 }
 
 .custom-cursor {
