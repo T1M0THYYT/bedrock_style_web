@@ -154,7 +154,7 @@ body > div {
     margin-right: auto;
     width: 100vw;
     z-index: 1;
-    height: 3vh;
+    height: 25px;
     image-rendering: pixelated;
 	
 }
