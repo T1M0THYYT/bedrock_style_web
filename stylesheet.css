@@ -63,18 +63,8 @@ body > div {
 #minecraft_title {
     margin-left: auto;
     margin-right: auto;
-    width: 75vw;
+    width: 45vw;
     margin-top: 6%;
-}
-
-#topbar {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100vw;
-    z-index: 1;
-    height: 2.5vh;
-    image-rendering: pixelated;
-	
 }
 
 #buttons > button > #button_icon {
@@ -157,6 +147,16 @@ body > div {
     text-align: center;
     font-size: 20px;
     z-index: 2;
+}
+
+#topbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    z-index: 1;
+    height: 3vh;
+    image-rendering: pixelated;
+	
 }
 
 #padding {
