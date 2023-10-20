@@ -4,16 +4,17 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.top = `${e.clientY}px`;
 });
 
-document.getElementById("buttons").addEventListener("click", function() {
-  var audio = new Audio('/sounds/button_click.ogg');
+//document.getElementById("buttons").addEventListener("click", function() {
+	
+function button_click() {
+  var audio = new Audio('sounds/button_click.ogg');
   audio.play();
-});
+}
 
 function openWebsite(url) {
   window.open(url, "_blank");
 }
 
 function showImage() {
-  var imageDiv = document.getElementById('dialogImage');
-  imageDiv.style.display = 'block';
+  dialogImage.style.display = 'block';
 }
