@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Mod</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" href="bc270c23058d513de5124ffea6bf9199af7a2370.ico" type="image/x-icon">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minecraft Mod</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="icon" href="icon.ico" type="image/x-icon">
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
+
 <body>
-    <div>
-        <div class="custom-cursor"></div>
-        
-        <p id="header_text">Welcome</p>
-        <img id="topbar" src="header.png" alt="header.png">
-        <img id="minecraft_title" src="title.png" alt="Minecraft Mod Title">
-        <div id="buttons">
-            <button onclick="openWebsite('https://youtube.com/@T1M0THYYT'); button_click();">
-                <img id="button_icon" src="green_button_default.png" />
-                <p id="label">Youtube</p>
-            </button>
-            <button onclick="openWebsite('https://discord.gg/GtWhMD3cKT'); button_click();">
-                <img id="button_icon" src="white_button_default.png" />
-                <p id="label">Discord</p>
-            </button>
-            <button onclick="openWebsite('https://twitter.com/T1M0THY_Yt'); button_click();">
-                <img id="button_icon" src="white_button_default.png" />
-                <p id="label">Twitter</p>
-            </button>
-        </div>
-        <div id="padding"></div>
-        <div id="paragraph">Hello World.</div>
-        <script src="script.js"></script>
-        <div id="paragraph">This is a test website made by T1M0THYYT.</div>
-        <div id="buttons">
-            <button onclick="showImage(); button_click();">
-                <img id="button_icon" src="green_button_default.png"></img>
-                <p id="label">Green Button</p>
-            </button>
-        </div>
-        <div id="dialogImage">
-            <img src="modal_nobottom.png" alt="Dialog Image">
-            <div id="paragraph">This text should be hidden when the buttons is not yet clicked. If you already see this without clicking the button, that means its broken</div>
-        </div>
-    </div>
+	<div>
+		<div class="custom-cursor"></div>
+		<p id="header_text">Welcome</p>
+		<img id="topbar" src="img/header.png" alt="header.png">
+		<img id="minecraft_title" src="img/title.png" alt="Minecraft Mod Title">
+		<div id="buttons">
+			<button onclick="ore.openUrl('https://youtube.com/@T1M0THYYT'); ore.button_click();">
+				<img id="button_icon" src="img/green_button_default.png" />
+				<p id="label">Youtube</p>
+			</button>
+			<button onclick="ore.openUrl('https://discord.gg/GtWhMD3cKT'); ore.button_click();">
+				<img id="button_icon" src="img/white_button_default.png" />
+				<p id="label">Discord</p>
+			</button>
+			<button onclick="ore.openUrl('https://twitter.com/T1M0THY_Yt'); ore.button_click();">
+				<img id="button_icon" src="img/white_button_default.png" />
+				<p id="label">Twitter</p>
+			</button>
+		</div>
+		<div id="padding"></div>
+		<div id="paragraph">Hello World.</div>
+		<div id="paragraph">This is a test page made by T1M0THYYT.<br><i style="font-size: 50%;">fixed for desktop by XiaozhiSans.</i></div>
+		<div id="buttons">
+			<button onclick="ore.dialog(); ore.button_click();">
+				<img id="button_icon" src="img/green_button_default.png"></img>
+				<p id="label">Click me</p>
+			</button>
+		</div>
+		<div id="dialogImage" style="display: none;" onclick="ore.closeDialog(); ore.button_click();">
+			<img src="img/modal_nobottom.png" alt="Dialog Image">
+			<div id="paragraph" style="margin-top: -80%; font-size: 400%;">This text should be hidden when the buttons is not yet clicked.<br><br>If you already see this without clicking the button, that means its broken.<br><br>click "×" or anywhere in the window can close.</div>
+		</div>
+	</div>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-body {
+* {
   cursor: none;
 }
 
@@ -11,25 +11,26 @@ body > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("background.png");
+    background-image: url("../img/background.png");
     background-position: center;
     background-size: cover;
 }
 
 @font-face {
     font-family: "MinecraftTen";
-    src: url("fonts/minecraft/Minecraft-Normal.ttf");
+    src: url("../fonts/minecraft/Minecraft-Normal.ttf");
 }
 @font-face {
     font-family: "MinecraftBold";
-    src: url("fonts/minecraft/Minecraft-Bold.otf");
+    src: url("../fonts/minecraft/Minecraft-Bold.otf");
 }
 @font-face {
     font-family: "Mojangles";
-    src: url("fonts/minecraft/Minecraft-Regular.otf");
+    src: url("../fonts/minecraft/Minecraft-Regular.otf");
 }
 
 #buttons {
+    user-select: none;
     image-rendering: pixelated;
     display: flex;
     margin-left: auto;
@@ -91,11 +92,11 @@ body > div {
 }
 
 #dialogImage {
-    display: none;
     transform: scale(0.2);
-    position: absolute;
-    top: -14vh;
+    position: fixed;
     image-rendering: pixelated;
+    margin: -45%;
+    z-index: 10;
 }
 
 #buttons > button:hover {
@@ -134,13 +135,15 @@ body > div {
     color: white;
     width: auto;
     padding: 15px;
-    position: auto; /*fixed*/
+    position: fixed;
     margin-top: 10px;
     top: 90%;
     font-family: Mojangles;
     font-size: 12px;
     border-radius: 1px;
     border: 4px solid;
+    text-align: center;
+    z-index: 11;
 }
 
 #header_text {
@@ -173,7 +176,7 @@ body > div {
   position: absolute;
   width: 18px; 
   height: 18px; 
-  background: url('cursor.png') no-repeat;
+  background: url('../img/cursor.png') no-repeat;
   background-size: cover;
   pointer-events: none;
   z-index: 1000;
